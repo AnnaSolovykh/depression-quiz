@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Are you sure you are not depressed?</h1>
+        <p class="headline">Go through Patient Health Questionnaire (PHQ-9), and you will see whether you need help or not.</p>
+        <form>
+            <label>Over the last two weeks, how often have you been bothered by any of the following problems?</label>
+
+            <div class="question">
+                <label>Little interest or pleasure in doing things?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionOne">Not at all
+                    <input type="radio" name="questionOne" class="oneOne">Several days
+                    <input type="radio" name="questionOne" class="oneTwo" >More than half the days
+                    <input type="radio" name="questionOne" class="oneThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Feeling down, depressed, or hopeless?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionTwo">Not at all
+                    <input type="radio" name="questionTwo" class="twoOne">Several days
+                    <input type="radio" name="questionTwo" class="twoTwo" >More than half the days
+                    <input type="radio" name="questionTwo" class="twoThree">Nearly every day
+                </div>
+
+            <div class="question">
+                <label>Poor appetite or overeating?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionThree">Not at all'
+                    <input type="radio" name="questionThree" class="threeOne">Several days
+                    <input type="radio" name="questionThree" class="threeTwo">More than half the days
+                    <input type="radio" name="questionThree" class="threeThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Feeling bad about yourself - or that you are a failure or have let yourself or your family down?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionFour">Not at all
+                    <input type="radio" name="questionFour" class="fourOne">Several days
+                    <input type="radio" name="questionFour" class="fourTwo">More than half the days
+                    <input type="radio" name="questionFour" class="fourThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionFive">Not at all
+                    <input type="radio" name="questionFive" class="fiveOne">Several days
+                    <input type="radio" name="questionFive" class="fiveTwo">More than half the days
+                    <input type="radio" name="questionFive" class="fiveThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Moving or speaking so slowly that other people could have noticed?
+                    Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionSix">Not at all
+                    <input type="radio" name="questionSix" class="sixOne">Several days
+                    <input type="radio" name="questionSix" class="sixTwo">More than half the days
+                    <input type="radio" name="questionSix" class="sixThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Thoughts that you would be better off dead, or of hurting yourself in some way?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionSeven">Not at all
+                    <input type="radio" name="questionSeven" class="sevenOne">Several days
+                    <input type="radio" name="questionSeven" class="sevenTwo">More than half the days
+                    <input type="radio" name="questionSeven" class="sevenThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Trouble falling or staying asleep, or sleeping too much?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionEight">Not at all
+                    <input type="radio" name="questionEight" class="eightOne">Several days
+                    <input type="radio" name="questionEight" class="eightTwo">More than half the days
+                    <input type="radio" name="questionEight" class="eightThree">Nearly every day
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Feeling tired or having little energy?</label>
+                <div class="inputFields">
+                    <input type="radio" name="questionNine" >Not at all
+                    <input type="radio" name="questionNine" class="nineOne">Several days
+                    <input type="radio" name="questionNine" class="nineTwo">More than half the days
+                    <input type="radio" name="questionNine" class="nineThree">Nearly every day
+                </div>
+            </div>
+
+            <button type="submit" id="btn">See the results</button>
+            
+        </form>
+
+        <div id="resultContainer">
+            <p id="result">Your result will be here...</p>
+            <p class="depression-severity"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
